@@ -1,0 +1,408 @@
+ /* Font */
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+ 
+ 
+ 
+ 
+ .navbar-custom {
+            background-color: #ffffff;
+            /* Background putih */
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+            /* Shadow halus pada navbar */
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            /* Ukuran logo lebih besar */
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .nav-link {
+            color: #333;
+            /* Warna teks menu */
+            font-weight: 600;
+            padding: 10px 20px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #f39c12;
+            /* Warna saat hover */
+        }
+
+        .nav-item {
+            padding: 0px 20px;
+        }
+
+        .btn-login,
+        .btn-register {
+            padding: 8px 20px;
+            font-weight: bold;
+            border-radius: 30px;
+        }
+
+        .btn-login {
+            background-color: white;
+            color: #3A89FF;
+            border: 2px solid #3A89FF;
+        }
+
+        .btn-login:hover {
+            background-color: #3A89FF;
+            color: white;
+        }
+
+        .btn-register {
+            background-color: #FFBD59;
+            color: white;
+            border: none;
+            margin-left: 10px;
+        }
+
+        .btn-register:hover {
+            background-color: #e6e6e6;
+            color: black;
+        }
+
+        /* Styling untuk navbar dalam mode portrait */
+        @media (max-width: 767px) {
+            .navbar-nav {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .navbar-nav .nav-item {
+                margin: 5px 0;
+            }
+
+            .navbar-toggler {
+                margin-left: auto;
+            }
+
+            .dropdown-menu {
+                text-align: center;
+            }
+
+            /* Tambahan untuk memastikan tombol Login dan Register berada di tengah */
+            .d-flex {
+                justify-content: center;
+                width: 100%;
+                margin-top: 10px;
+                /* Jarak atas agar tombol tidak terlalu dekat dengan navbar */
+            }
+
+            .jumbotron {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+        }
+
+        /* Tutup tag @media */
+
+        /* Hero Section */
+        .hero-section {
+            background-color: #FFF5DC;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .hero-section p {
+            color: #555;
+        }
+
+        .btn-join {
+            background-color: #FFBD59;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+
+
+        /* Tutor Section */
+        .tutor-section {
+            background: linear-gradient(to bottom, #ffcc4d 55%, #fff 10%);
+            padding: 20px 40px;
+
+        }
+
+        /* Testimonial Section */
+        .testimoni {
+            margin-top: 15px;
+            padding: 40px 30px;
+            background: #ffcc4d;
+            flex-direction: column;
+        }
+
+
+
+        /* Pengaturan foto tutor */
+        .tutor-photo {
+            width: 120px;
+            /* Ukuran yang sama untuk semua foto */
+            height: 120px;
+            /* Ukuran yang sama untuk semua foto */
+            object-fit: cover;
+            /* Menyesuaikan gambar ke dalam lingkaran tanpa mengubah rasio aspek */
+            border-radius: 50%;
+            /* Membuat gambar menjadi lingkaran */
+            border: 3px;
+            /* Opsional: Border untuk memberi gaya pada foto */
+            margin-bottom: 10px;
+            /* Jarak bawah antara foto dan teks nama tutor */
+        }
+
+        /* Pengaturan foto testimoni */
+        .testimonial-photo {
+            width: 300px;
+            /* Ukuran lebih kecil dan seragam */
+            height: 200px;
+            object-fit: cover;
+            /* Menjaga proporsi gambar */
+            border-radius: 10%;
+            /* Membuat gambar menjadi lingkaran */
+            border: 3px solid #FFD700;
+            /* Tambahkan border untuk gaya */
+            margin-bottom: 20px;
+        }
+
+        /* Pengaturan teks testimoni */
+        .testimonial-text {
+            padding-left: 20px;
+            /* Memberi jarak antara teks dan gambar */
+            border-left: 3px solid #FFD700;
+            /* Gaya garis di sebelah kiri teks */
+        }
+
+        .child-image {
+            width: 400px;
+            /* Ukuran lebih kecil dan seragam */
+            height: 400px;
+            margin-top: 20px;
+            object-fit: cover;
+            /* Menjaga proporsi gambar */
+            border-radius: 20%;
+            /* Membuat gambar menjadi lingkaran */
+            border: 3px;
+            /* Tambahkan border untuk gaya */
+            margin-bottom: 20px;
+        }
+
+        /* Jumbotron */
+        .jumbotron {
+            margin-top: 70px;
+        }
+
+        .jumbotron .judul {
+            font-family: "Alexandria";
+        }
+
+        .judul {
+            font-weight: bold;
+        }
+
+        .jumbotron p {
+            font-weight: 500;
+        }
+
+        .jumbotron h1 {
+            font-weight: bold;
+        }
+
+        .btn-jumbotron {
+            background-color: #FFBD59;
+            color: white;
+        }
+
+        .deskripsi {
+            font-weight: 400;
+
+        }
+
+        #program {
+            background-color: #004AAD;
+        }
+
+        .p-3 {
+            color: #FFBD59;
+        }
+
+        
+
+        /* Program */
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 50px;
+            height: 50px;
+            background-color: #FFC107;
+            /* Warna kuning */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Tutor */
+        .carousel-control-prev-tutor,
+        .carousel-control-next-tutor {
+            width: 50px;
+            height: 50px;
+            background-color: #004AAD;
+            /* Warna kuning */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Program */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1);
+            /* Mengubah ikon menjadi putih agar terlihat di latar kuning */
+        }
+
+        /* Tutor */
+        .tutor-prev,
+        .tutor-next {
+            filter: invert(1);
+            /* Mengubah ikon menjadi putih agar terlihat di latar kuning */
+        }
+
+        .carousel-item {
+            padding: 5px;
+        }
+
+        .card-body {
+            padding-left: 10px;
+        }
+
+        /* Atur ukuran gambar dan box card */
+        .card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 150px;
+            /* Sesuaikan ukuran card dengan gambar */
+            height: 80%;
+            text-align: center;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-img-top {
+            padding-top: 20px;
+            width: 100px;
+            /* Lebar gambar sesuai ukuran card */
+            height: 100px;
+            /* Tinggi gambar */
+            object-fit: cover;
+            border-radius: 10px;
+            /* Sesuaikan jika ingin rounded */
+            margin: 0 auto;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            /* Sesuaikan jika ingin lebih tinggi */
+        }
+
+        .icon-title {
+            font-family: "Alexandria";
+            color: #FFC107;
+            font-size: 20px;
+        }
+
+        /* Tutor */
+        .icon-title-tutor {
+            font-family: "Alexandria";
+            color: #FFC107;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        /* Tutor */
+        .card-text-tutor {
+            font-style: "Kurim Park";
+            color: #004AAD;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .tutor-h1 {
+            font-family: "Alexandria";
+            font-weight: bold;
+            color: #004AAD;
+        }
+
+        /* Tutor */
+        .p-tutor {
+            font-family: "Kulim Park";
+            font-weight: 400;
+            color: #004AAD;
+        }
+
+        .text-start h1 {
+            line-height: 60px;
+        }
+
+        .register-btn {
+            font-weight: bold;
+            border-radius: 24px;
+            padding: 8px 18px;
+        }
+
+        /* Testimoni */
+        .embed-responsive-item {
+            border-radius:  15px;
+        }
+
+        .testimoni-h1 {
+            font-family: "Alexandria";
+            color: #004AAD;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .testimoni-p {
+            font-family: "Kulim Park";
+            font-weight: 400;
+            font-size: 18px;
+            font-style: oblique;
+            color: #004AAD;
+            padding-top: 12px;
+            padding-left: 12px;
+        }
+
+        /* Testimoni photo */
+        .testimoni-photo {
+            overflow: hidden;
+            width: 70px;
+            /* Ukuran yang sama untuk semua foto */
+            height: 70px;
+            /* Ukuran yang sama untuk semua foto */
+            object-fit:cover;
+            /* Menyesuaikan gambar ke dalam lingkaran tanpa mengubah rasio aspek */
+            border-radius: 50%;
+            /* Membuat gambar menjadi lingkaran */
+            border: 10px;
+            /* Opsional: Border untuk memberi gaya pada foto */
+
+        }
